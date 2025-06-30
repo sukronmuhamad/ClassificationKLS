@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Prediksi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Hasil Prediksi Gaya Belajar</h1>
+        <center>
+            <strong>Nama :</strong> {{ nama }} <br>
+            Concrete Experiences : {{ ce }} <br>
+            Refrelctive Observatition : {{ ro }} <br>
+            Abstract Conseptualization : {{ ac }} <br>
+            Active Experimentation : {{ ae }} <br>
+            AC - CE = {{ ac_ce }} <br>
+            AE - RO = {{ ae_ro }} <br>
+            <strong>Gaya Belajar:</strong> <span class="result">{{ prediksi }}</span>
+         </center>
+        <a href="{{ url_for('index') }}" class="btn"><center>Kembali ke Form</center></a>
+    </div>
+</body>
+</html>
